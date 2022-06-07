@@ -1,7 +1,4 @@
-require "./janken_method"
-require "./acchimuite_method"
 module Janken
-  require "./acchimuite_method"
   def janken_start
     puts "最初はグー、ジャンケン.."
     puts "(0)グー(1)チョキ(2)パー(3)戦わない"
@@ -51,7 +48,6 @@ module Janken
   module_function :janken_judge
 end
 module Acchimuite
-  require "./janken_method"
   def acchimuite_win
     puts "あっち向いてー.."
     puts "(0)上(1)右(2)下(3)左"
